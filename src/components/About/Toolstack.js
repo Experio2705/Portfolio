@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiVercel, SiVisualstudiocode, SiSupabase, SiPowerbi } from "react-icons/si";
+import { SiVercel, SiVisualstudiocode, SiSupabase, SiPowerbi ,SiRender,SiFirebase} from "react-icons/si";
 
 function Toolstack() {
   return (
@@ -16,6 +16,12 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSupabase title="Supabase" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSupabase title="Render" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSupabase title="Firebase" />
       </Col>
     </Row>
   );

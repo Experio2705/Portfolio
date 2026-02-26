@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import source from "../../Assets/Projects/sourcemart.png";
-import media from "../../Assets/Projects/mediavault.png";
+import media from "../../Assets/Projects/blog.png";
 import News from "../../Assets/Projects/NewsMania.png";
 import weather from "../../Assets/Projects/weather.png";
 import sales from "../../Assets/Projects/Sales.png";
@@ -22,6 +22,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={media}
+              isBlog={false}
+              title="Blog"
+              description="A modern full‑stack blogging platform where users can create posts, like, save, and interact with other users. The project demonstrates authentication, database relationships, REST APIs, and a responsive frontend UI."
+              ghLink="https://github.com/Experio2705/Blog.git"
+              demoLink="https://blog-epla.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={source}
               isBlog={false}
               title="Source-Mart"
@@ -31,25 +41,15 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={media}
-              isBlog={false}
-              title="Mediavault"
-              description="MedVault AI Assistant is a React + TypeScript web app built with Vite, Tailwind CSS, and shadcn-ui, designed to provide AI-powered medical information and secure record management through a clean, responsive interface."
-              ghLink="https://github.com/Experio2705/medvault-ai-assistant.git"
-              demoLink="https://medvault-ai-assistant.vercel.app/"
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={News}
               isBlog={false}
               title="NewsMania"
-              description="News-Mania is a responsive news aggregator web app built with HTML, CSS, and JavaScript that uses the GNews API to display country-specific and genre-based news as clickable cards with images."
-              ghLink="https://github.com/Experio2705/News-Mania.git"
-              demoLink="https://news-mania-xi.vercel.app/"              
+              description="This project is a news web application built using modern frontend technologies.It fetches, displays, and categorizes news articles in a clean, responsive interface."
+              ghLink="https://github.com/Experio2705/News.git"
+              demoLink="https://news-eight-umber.vercel.app/"              
             />
           </Col>
 
