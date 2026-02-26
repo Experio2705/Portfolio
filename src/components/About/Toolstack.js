@@ -18,10 +18,10 @@ function Toolstack() {
         <SiSupabase title="Supabase" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSupabase title="Render" />
+        <SiRender title="Render" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSupabase title="Firebase" />
+        <SiFirebase title="Firebase" />
       </Col>
     </Row>
   );
